@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>cRICKET gAME</title>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bat Ball Atump Game</h1>
+
+    <button
+      onclick="
+    
+    let random_num=Math.random()*3;
+    let comp_1,res,res1;
+    res=startapp(random_num);
+res1=startapp1(res);
+getResult(res,res1);
+
+    "
+    >
+      Bat
+    </button>
+    <button>Ball</button>
+    <button>Stump</button>
+
+    <script>
+      let random_num1;
+
+      function startapp(random_num1) {
+        if (random_num1 > 0 && random_num1 <= 1) {
+          return "Bat";
+        } else if (random_num1 > 1 && random_num1 <= 2) {
+          return "Ball";
+        } else {
+          return "Stump";
+        }
+      }
+
+      function startapp1(comp_1) {
+        if (comp_1 === "Ball") {
+          return "User won the match";
+        } else if (comp_1 === "Bat") {
+          return "Its a tie";
+        } else {
+          return "computer won";
+        }
+      }
+      function getResult(res, res1) {
+        alert(`you choose Bat computer choice is ${res} result: ${res1}`);
+      }
+    </script>
+  </body>
+</html>
+<!-- //Falsy Values:0,null,undefined,false,NaN,""(empty string) //Truthy Values: All
+values not listed as falsy -->
+<!-- Ternary Operator: condition? truthValue: falseValue
+Guard Operator:Value||defaultValue
+Default Operator:value ?? fallbackValue
+
+simplifies  -->

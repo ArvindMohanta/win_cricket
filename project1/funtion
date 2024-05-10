@@ -1,0 +1,11 @@
+// what are function ?
+
+// Blocks of resuasable code.
+
+// DRY principle: "Dont Repeat Yourself" it Encourages code reusuablity.
+// Usage
+
+// function greet(name){
+//     //code
+// }
+//greet(name)
